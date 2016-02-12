@@ -12,6 +12,8 @@
 		BC59FC721C67CA130050ACE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC59FC701C67CA130050ACE8 /* Main.storyboard */; };
 		BC59FC741C67CA130050ACE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC59FC731C67CA130050ACE8 /* Assets.xcassets */; };
 		BC59FC771C67CA130050ACE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC59FC751C67CA130050ACE8 /* LaunchScreen.storyboard */; };
+		BCA53D131C6BFF4C00741FAF /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA53D121C6BFF4C00741FAF /* Assessment.swift */; };
+		BCB9836C1C698298005F9F93 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB9836B1C698298005F9F93 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		BC59FC731C67CA130050ACE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC59FC761C67CA130050ACE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC59FC781C67CA130050ACE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCA53D121C6BFF4C00741FAF /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
+		BCB9836B1C698298005F9F93 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				BC59FC731C67CA130050ACE8 /* Assets.xcassets */,
 				BC59FC751C67CA130050ACE8 /* LaunchScreen.storyboard */,
 				BC59FC781C67CA130050ACE8 /* Info.plist */,
+				BCB9836B1C698298005F9F93 /* Course.swift */,
+				BCA53D121C6BFF4C00741FAF /* Assessment.swift */,
 			);
 			path = gpaCalculator;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB9836C1C698298005F9F93 /* Course.swift in Sources */,
+				BCA53D131C6BFF4C00741FAF /* Assessment.swift in Sources */,
 				BC59FC6F1C67CA130050ACE8 /* ViewController.swift in Sources */,
 				BC59FC6D1C67CA130050ACE8 /* AppDelegate.swift in Sources */,
 			);
@@ -285,6 +293,7 @@
 				BC59FC7D1C67CA130050ACE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
