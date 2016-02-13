@@ -12,6 +12,8 @@
 		BC59FC721C67CA130050ACE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC59FC701C67CA130050ACE8 /* Main.storyboard */; };
 		BC59FC741C67CA130050ACE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC59FC731C67CA130050ACE8 /* Assets.xcassets */; };
 		BC59FC771C67CA130050ACE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC59FC751C67CA130050ACE8 /* LaunchScreen.storyboard */; };
+		BC8D8D5E1C6EBA75000E946B /* Sketch Match.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC8D8D5D1C6EBA75000E946B /* Sketch Match.ttf */; };
+		BC8D8D601C6EBBAA000E946B /* shablagoosuperital.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC8D8D5F1C6EBBAA000E946B /* shablagoosuperital.ttf */; };
 		BCA53D131C6BFF4C00741FAF /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA53D121C6BFF4C00741FAF /* Assessment.swift */; };
 		BCB9836C1C698298005F9F93 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB9836B1C698298005F9F93 /* Course.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 		BC59FC731C67CA130050ACE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC59FC761C67CA130050ACE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC59FC781C67CA130050ACE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC8D8D5D1C6EBA75000E946B /* Sketch Match.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sketch Match.ttf"; sourceTree = "<group>"; };
+		BC8D8D5F1C6EBBAA000E946B /* shablagoosuperital.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = shablagoosuperital.ttf; sourceTree = "<group>"; };
 		BCA53D121C6BFF4C00741FAF /* Assessment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
 		BCB9836B1C698298005F9F93 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,6 +70,8 @@
 				BC59FC781C67CA130050ACE8 /* Info.plist */,
 				BCB9836B1C698298005F9F93 /* Course.swift */,
 				BCA53D121C6BFF4C00741FAF /* Assessment.swift */,
+				BC8D8D5D1C6EBA75000E946B /* Sketch Match.ttf */,
+				BC8D8D5F1C6EBBAA000E946B /* shablagoosuperital.ttf */,
 			);
 			path = gpaCalculator;
 			sourceTree = "<group>";
@@ -131,7 +137,9 @@
 			files = (
 				BC59FC771C67CA130050ACE8 /* LaunchScreen.storyboard in Resources */,
 				BC59FC741C67CA130050ACE8 /* Assets.xcassets in Resources */,
+				BC8D8D601C6EBBAA000E946B /* shablagoosuperital.ttf in Resources */,
 				BC59FC721C67CA130050ACE8 /* Main.storyboard in Resources */,
+				BC8D8D5E1C6EBA75000E946B /* Sketch Match.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,7 +263,8 @@
 		BC59FC7C1C67CA130050ACE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconCustom;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = gpaCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mcdonald.gpaCalculator;
@@ -266,7 +275,8 @@
 		BC59FC7D1C67CA130050ACE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconCustom;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = gpaCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mcdonald.gpaCalculator;
