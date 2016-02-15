@@ -56,6 +56,25 @@ class ViewController: UIViewController {
     // initializes the object that will take all four courses and return a GPA
     var gpaAssessment = Assessment()
     
+    func clearAddCourseInputFields(){
+        courseTitle.text = ""
+        
+        assignmentsPoint.text = ""
+        assignmentsMax.text = ""
+        assignmentsPercent.text = ""
+        
+        midtermPoint.text = ""
+        midtermMax.text = ""
+        midtermPercent.text = ""
+        
+        finalPoint.text = ""
+        finalMax.text = ""
+        finalPercent.text = ""
+        
+        creditAmount.text = ""
+        
+    }
+    
     //based on the value of the GPA, sets the color of the gpaLabel text
     //used in updateGPALabel
     func determineGPAColor(gpa: Double, label: UILabel) {
@@ -239,6 +258,9 @@ class ViewController: UIViewController {
         return grade
     }
     
+    /* ******************CHECKS FOR LABELS********************* */
+    //used to check input labels for the addCourse button click
+    
     //calculates the sum of the weights for assignments, midterm, and final.
     //returns true if the weight sum is not equal to 100
     func checkWeightSum(values: [String: String]) -> Bool {
@@ -289,6 +311,33 @@ class ViewController: UIViewController {
         return false
     }
     
+    
+    // takes a string, and checks each character to see if it is a letter or a number
+    // returns true if a string contains a letter
+    // reeturns false if a string contains a number
+    func containsLetters(input: String) -> Bool {
+        for chr in input.characters {
+            if ((chr >= "a" && chr <= "z") || (chr >= "A" && chr <= "Z")) {
+                return true
+            }
+        }
+        return false
+    }
+    
+    //using the containsLetters() method, checks the dictionary of labels for strings containing letters
+    // returns true if it contains letters
+    // returns false if it contains no letters in any of the labels contained in the dictionary of labels
+    func checkForLetters(values: [String: String]) -> Bool {
+        for (_,item) in values {
+            if (containsLetters(item)) {
+                return true
+            }
+        }
+        return false
+    }
+
+    /* ****************END CHECKS FOR LABELS******************* */
+    
     //handles the Add Course button click
     @IBAction func addCourse(sender: AnyObject) {
         let fieldValues: [String: String] = ["assignPoint": assignmentsPoint.text!, "assignMax": assignmentsMax.text!, "assignPercent": assignmentsPercent.text!, "midPoint":midtermPoint.text!, "midMax": midtermMax.text!, "midPercent": midtermPercent.text!, "finalPoint": finalPoint.text!, "finalMax": finalMax.text!, "finalPercent": finalPercent.text!]
@@ -297,6 +346,11 @@ class ViewController: UIViewController {
         if (courseTitle.text == "" || assignmentsPoint.text == "" || assignmentsMax.text == "" || assignmentsPercent.text == "" || midtermPoint.text == "" || midtermMax.text == "" || midtermPercent.text == "" || finalPoint.text == "" || finalMax.text == "" || finalPercent.text == "" || creditAmount.text == "") {
             
             let alert = UIAlertController(title: "Error", message: "all fields must be filled", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }// if any of the input fields for the grades contain letters, alert the user of their error.
+        else if (checkForLetters(fieldValues)){
+            let alert = UIAlertController(title: "Error", message: "Fields can only contain numerical values.", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
         }
@@ -311,7 +365,6 @@ class ViewController: UIViewController {
             let alert = UIAlertController(title: "Error", message: "One of your point values is not between 0 and its max", preferredStyle: UIAlertControllerStyle.Alert)
             alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
             self.presentViewController(alert, animated: true, completion: nil)
-
         }
         // if any of the course titles already entered match the new course the user is attempting to enter, show an alert to let the user know of his error
         else if (checkCourseTitle(courseTitle.text!)) {
@@ -320,7 +373,6 @@ class ViewController: UIViewController {
             self.presentViewController(alert, animated: true, completion: nil)
         }
         else {
-            
             //alerts the user that they cannot enter more than 4 courses
             if (gpaAssessment.getSize() >= 4) {
                 let alert = UIAlertController(title: "Error", message: "Max course allowed is 4", preferredStyle: UIAlertControllerStyle.Alert)
@@ -336,6 +388,11 @@ class ViewController: UIViewController {
                 // update chalkboard with new values
                 updateChalkboardCourses()
                 
+                //clear the labels for the next courses
+                clearAddCourseInputFields()
+                
+                
+                
             }
             
         
@@ -348,8 +405,12 @@ class ViewController: UIViewController {
     //handles the Delete Course button click
     @IBAction func deleteCourse(sender: AnyObject) {
         
+        // if the course id is empty do nothing
         if (courseID.text! == "") {
             
+        }
+        else if (gpaAssessment.getSize() == 0) {
+        
         }
         else if ((Int(courseID.text!)! < 1) || (Int(courseID.text!)! > gpaAssessment.getSize()) ) {
             let alert = UIAlertController(title: "Error", message: "That course does not exist", preferredStyle: UIAlertControllerStyle.Alert)
@@ -359,6 +420,7 @@ class ViewController: UIViewController {
         else {
             gpaAssessment.deleteCourse(Int(courseID.text!)! - 1)
             updateChalkboardCourses()
+            courseID.text = ""
         }
     }
     

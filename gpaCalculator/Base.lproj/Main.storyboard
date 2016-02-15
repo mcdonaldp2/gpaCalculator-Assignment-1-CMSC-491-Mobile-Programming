@@ -59,7 +59,7 @@
                                 <rect key="frame" x="20" y="100" width="560" height="461"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title of the Course: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFC-xJ-GjP">
-                                        <rect key="frame" x="8" y="8" width="117" height="14"/>
+                                        <rect key="frame" x="8" y="8" width="117" height="17"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="ShablagooSuper-Italic" family="Shablagoo Super-Italic" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -71,7 +71,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignment Type " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0B-uW-7CI">
-                                        <rect key="frame" x="8" y="34" width="105" height="30"/>
+                                        <rect key="frame" x="8" y="37" width="105" height="30"/>
                                         <color key="backgroundColor" red="0.36027032120000002" green="0.82218047240000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="bvR-bc-OkV"/>
@@ -80,29 +80,22 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignments: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWV-2m-S3l">
-                                        <rect key="frame" x="8" y="72" width="105" height="30"/>
-                                        <color key="backgroundColor" red="0.36027032120000002" green="0.82218047240000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="ShablagooSuper-Italic" family="Shablagoo Super-Italic" pointSize="14"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Midterm: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPH-bw-qKT">
-                                        <rect key="frame" x="8" y="110" width="105" height="30"/>
+                                        <rect key="frame" x="8" y="113" width="105" height="30"/>
                                         <color key="backgroundColor" red="0.36027032120000002" green="0.82218047240000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ShablagooSuper-Italic" family="Shablagoo Super-Italic" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ln8-aL-BOL">
-                                        <rect key="frame" x="8" y="148" width="105" height="30"/>
+                                        <rect key="frame" x="8" y="151" width="105" height="30"/>
                                         <color key="backgroundColor" red="0.36027032120000002" green="0.82218047240000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ShablagooSuper-Italic" family="Shablagoo Super-Italic" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImE-hK-nd4">
-                                        <rect key="frame" x="8" y="186" width="105" height="30"/>
+                                        <rect key="frame" x="8" y="189" width="105" height="30"/>
                                         <color key="backgroundColor" red="0.36027032120000002" green="0.82218047240000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="ShablagooSuper-Italic" family="Shablagoo Super-Italic" pointSize="14"/>
                                         <state key="normal" title="Add Course ">
@@ -284,6 +277,13 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assignments: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWV-2m-S3l">
+                                        <rect key="frame" x="8" y="75" width="105" height="30"/>
+                                        <color key="backgroundColor" red="0.36027032120000002" green="0.82218047240000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="ShablagooSuper-Italic" family="Shablagoo Super-Italic" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.79481620860000002" green="0.79481620860000002" blue="0.79481620860000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -325,6 +325,7 @@
                                     <constraint firstItem="Iaw-Wh-LZh" firstAttribute="leading" secondItem="hiK-qY-qR7" secondAttribute="leading" constant="8" id="DHJ-0D-rrE"/>
                                     <constraint firstItem="0eQ-3T-l1F" firstAttribute="leading" secondItem="vU9-1o-1kI" secondAttribute="trailing" constant="8" id="Dc3-RA-Cpq"/>
                                     <constraint firstItem="gtY-Qb-rQi" firstAttribute="leading" secondItem="ImE-hK-nd4" secondAttribute="trailing" constant="20" id="EKq-Dh-1FI"/>
+                                    <constraint firstItem="RgE-GP-BBJ" firstAttribute="bottom" secondItem="Y0B-uW-7CI" secondAttribute="bottom" id="F5M-G6-y51"/>
                                     <constraint firstItem="4xl-oO-hjO" firstAttribute="leading" secondItem="0eQ-3T-l1F" secondAttribute="trailing" constant="8" id="FTk-C5-Lmr"/>
                                     <constraint firstItem="mok-cv-Uwe" firstAttribute="top" secondItem="RgE-GP-BBJ" secondAttribute="bottom" constant="8" id="G3i-EY-CAb"/>
                                     <constraint firstItem="gtY-Qb-rQi" firstAttribute="leading" secondItem="RgE-GP-BBJ" secondAttribute="leading" id="GiJ-6v-94C"/>
@@ -400,6 +401,7 @@
                                     <constraint firstItem="mok-cv-Uwe" firstAttribute="leading" secondItem="kWV-2m-S3l" secondAttribute="trailing" constant="20" id="ohe-J3-apj"/>
                                     <constraint firstItem="RgE-GP-BBJ" firstAttribute="leading" secondItem="Y0B-uW-7CI" secondAttribute="trailing" constant="20" id="oj9-Fc-3K3"/>
                                     <constraint firstItem="IKr-mc-sof" firstAttribute="leading" secondItem="vbi-SP-Ufz" secondAttribute="leading" id="qL3-mc-PKf"/>
+                                    <constraint firstItem="RgE-GP-BBJ" firstAttribute="top" secondItem="Y0B-uW-7CI" secondAttribute="top" id="qMw-dn-6Kg"/>
                                     <constraint firstItem="0eQ-3T-l1F" firstAttribute="width" secondItem="Nd2-ie-sv4" secondAttribute="width" id="qOY-AT-gnU"/>
                                     <constraint firstItem="5oS-nb-eN7" firstAttribute="top" secondItem="IKr-mc-sof" secondAttribute="bottom" constant="8" id="qgc-I6-6J4"/>
                                     <constraint firstItem="4xl-oO-hjO" firstAttribute="leading" secondItem="0eQ-3T-l1F" secondAttribute="trailing" constant="8" id="rBb-9z-Nir"/>
